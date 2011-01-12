@@ -1,0 +1,50 @@
+application: startuptemplate
+version: 1
+runtime: python
+api_version: 1
+
+default_expiration: "365d"
+
+derived_file_type:
+- python_precompiled
+
+handlers:
+- url: /(robots\.txt|favicon\.ico|apple-touch-icon\.png)
+  static_files: static/\1
+  upload: static/(.*)
+
+- url: /static
+  static_dir: static
+
+- url: /js
+  static_dir: static/js
+
+- url: /css
+  static_dir: static/css
+
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+
+- url: /_ah/queue/deferred
+  script: main.py
+  login: admin
+
+- url: /.*
+  script: main.py
+
+inbound_services:
+- warmup
+
+#admin_console:
+#  pages:
+#  - name: Blog Comment Admin
+#    url: /blog/admin/comments
+#  - name: Create a Blog Post
+#    url: /blog/admin/newentry
+
+#error_handlers:
+#  - file: default_error.html
+#
+#  - error_code: over_quota
+#    file: over_quota.html
