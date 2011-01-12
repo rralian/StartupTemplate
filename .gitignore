@@ -1,0 +1,6 @@
+# Add files you want git to ignore here, rather than checking them in
+# Particularly any files that are generated as part of running the app in dev
+# And also any files that your IDE/editor may create
+.idea
+*.pyc
+app.yaml
