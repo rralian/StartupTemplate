@@ -1,0 +1,22 @@
+StartupTemplate is your head-start on building an awesome web application.
+
+Built into this template are some good best-practices:
+
+* far-future expires header
+* simple routing
+* a user model that can accept multiple login methods (gmail, openid)
+* html5
+* modernizr
+* asynchronously loaded javascript
+* google font loader
+* css reset
+* js profiling for admins
+* user auto-loading and available on each template
+
+All you need to do to start using this template is to pull the repository into your own directory, then add
+the application to Google App Engine Launcher using File -> Add Existing Application. Then start making your models,
+hanlders, and templates, and you're good to go.
+
+TODO
+Future functionality will include unit-testing and split-testing. Possibly continuous integration and
+auto-minification of javascript and css
