@@ -1,3 +1,4 @@
+{% autoescape true %}
 <!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 ielt8 ielt7"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 ielt8"> <![endif]-->
@@ -68,13 +69,13 @@
           },
           {
               load:['wait!/js/plugins.js','/js/script.js']
-          }{% comment %}
+          }{#
 
               *---------------------------------------------
               * load any admin-specific js files or functionality within the following block
 
 
-          {% endcomment %}{% if isAdmin %},
+          #}{% if isAdmin %},
           {
               load:['wait!/js/profiling/yahoo-profiling.min.js','/js/profiling/config.js']
           }{% endif %}
@@ -97,3 +98,4 @@
 
 </body>
 </html>
+{% endautoescape %}

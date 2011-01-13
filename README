@@ -4,6 +4,7 @@ Built into this template are the following tech and good best-practices:
 
 * Google App Engine
 * Webapp framework
+* jinja2 templates
 * python
 * jquery
 * far-future expires header
