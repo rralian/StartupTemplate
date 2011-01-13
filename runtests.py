@@ -1,9 +1,5 @@
 import os,sys
 
-# On Ubuntu:
-# sudo apt-get install python-profile
-# sudo apt-get install python-clearsilver
-
 if __name__ == '__main__':
 
     gaepath = None    
