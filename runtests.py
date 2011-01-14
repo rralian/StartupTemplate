@@ -14,6 +14,8 @@ if __name__ == '__main__':
         if not gaepath in sys.path:
             sys.path.insert(0,gaepath)
         sys.path.append(os.path.join(gaepath,'lib','webob'))
+        sys.path.append(os.path.join(gaepath,'lib','yaml','lib'))
+        
 
     import libs
 
