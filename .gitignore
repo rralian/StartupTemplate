@@ -5,3 +5,6 @@
 *.pyc
 app.yaml
 *~
+jinja2
+htmlcov
+.coverage

@@ -30,6 +30,10 @@ handlers:
   script: main.py
   login: admin
 
+- url: /htmlcov
+  static_dir: htmlcov
+  login: admin
+
 - url: /.*
   script: main.py
 
