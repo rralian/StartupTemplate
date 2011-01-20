@@ -38,6 +38,7 @@
 
 <body>
     <header>
+{{greeting|safe}}
     </header>
 
   <div id="container">
@@ -75,7 +76,11 @@
               * load any admin-specific js files or functionality within the following block
 
 
-          #}{% if isAdmin %},
+          #},
+          {
+              test:Modernizr.input.placeholder,
+              nope:'/js/jquery.placeholder.min.js'
+          }{% if isAdmin %},
           {
               load:['wait!/js/profiling/yahoo-profiling.min.js','/js/profiling/config.js']
           }{% endif %}

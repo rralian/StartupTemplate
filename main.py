@@ -25,7 +25,11 @@ import handlers
 def main():
 
     #map urls to handlers here
-    application = webapp.WSGIApplication([('/', handlers.MainHandler)],debug=True)
+    application = webapp.WSGIApplication([('/', handlers.MainHandler),
+                                          ('/restricted', handlers.RestrictedHandler),
+                                          ('/admin',handlers.AdminHandler)
+                                          ],
+                                         debug=True)
 
 
 

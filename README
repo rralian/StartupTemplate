@@ -1,4 +1,18 @@
-StartupTemplate is your head-start on building an awesome web application.
+StartupTemplate is your head-start on building an awesome web application. Here's how to get started.
+
+INSTALLING STARTUPTEMPLATE
+
+1. Download the zip file to your computer where you want your working directory.
+2. Unzip the file and rename the /StartupTemplate/ folder to something appropriate for your project.
+3. Make sure you have python 2.5 installed on your system and as the default (it's the latest GAE supports).
+3.1. Install if you don't. :-)
+4. Download/install GoogleAppEngineLauncher if you haven't.
+5. Install coverage.py if you don't have it.
+5.1. Don't have it? Not sure? Just type "easy_install coverage" into the terminal.
+6. Inside your new folder is a file called app.yaml. The first line says "application: startuptemplate". Change that to
+something appropriate for your project.
+7. Open GoogleAppEngineLauncher and click the plus icon.
+8. Leave the Application Name field blank and for Application Directory select your new folder. Click "Create".
 
 Built into this template are the following tech and good best-practices:
 
@@ -20,8 +34,8 @@ Built into this template are the following tech and good best-practices:
 
 All you need to do to start using this template is to pull the repository into your own directory, then add
 the application to Google App Engine Launcher using File -> Add Existing Application. Then start making your models,
-hanlders, and templates, and you're good to go.
+handlers, and templates, and you're good to go.
 
 TODO
-Future functionality will include unit-testing and split-testing. Possibly continuous integration and
-auto-minification of javascript and css
+Future functionality will include split-testing... possibly continuous integration and
+auto-minification of javascript and css.
